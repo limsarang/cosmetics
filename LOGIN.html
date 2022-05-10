@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        *{
+            font-family: 'Century Schoolbook', cursive;
+        }
+        p {
+            font-size:10px;
+            line-height:20%;
+        }
+        #login_box {
+            border:solid 2px #000000;
+            background: white;
+            margin:0 0 0 0px;
+            padding:10px 10px 10px 10px;
+        }
+        button {
+            position:fixed;
+            left: 210px;
+            top:100px;
+            margin-left:5px;
+            padding:12px;
+            background-color:rgb(255, 255, 255);
+
+        }
+        h1 {
+            font-size:25px;
+            text-align:center;
+        }
+        #box1 {
+            margin-top:10px;
+            margin-bottom:10px;
+        }
+        a {
+            font-size:13px;
+            text-decoration:none;
+            text-align:center;
+        }
+        a:link{
+            color: gray;
+            text-align:center;
+        }
+        a:visited {
+            color: gray;
+            text-align:center;
+        }
+        a:hover {
+            color: black;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="login_box">
+        <div id="box1"><h1>COSMETICS LOG IN</h1></div>
+        <form method="post" action="#">
+                <p>Enter ID : </p>
+                <input type="text" name="text" size="20" placeholder="id"><br>
+
+                <p>Enter PASSWORD : </p>
+                <input type="password" name="pass" size="20" placeholder="password"><br>
+
+            <button type="submit" onclick="alert('로그인 완료!');">LOGIN</button>
+        </form>
+        <a href="./Sign_Up.html" target="_blank" onclick="alert('회원가입 창으로 이동합니다.');">Sign Up</a>
+        <a href="./id_pass_find.html" target="_blank" onclick="alert('아이디/비밀번호 찾기 창으로 이동합니다.');">Find ID/Password</a>
+    </div>
+</body>
+</html>

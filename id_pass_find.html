@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div>
+        <form>
+          <h1>회원계정 찾기</h1>
+            <fieldset>
+              <legend>아이디 찾기</legend>
+                <table>
+                  <tr>
+                    <td>이름</td>
+                    <td><input type="text" size="35" name="name" placeholder="이름을 입력해주세요."></td>
+                  </tr>
+                  <tr>
+                <td>이메일</td>
+                <td><input type="text" name="email" placeholder="이메일을">@<input type = "text" placeholder="입력해주세요."/> &nbsp;&nbsp;
+                    <select>
+                     <option> 직접입력 </option>
+                     <option> naver.com </option>
+                     <option> daum.net </option>
+                     <option> nate.com </option>
+                    </select>
+                </select></td>
+                  </tr>
+                </table>
+              <input type="submit" value="아이디 찾기" onclick="alert('저는...도움을 줄 수 없어요. 한 번 잘 생각해보세요 당신에 머릿속에 있을겁니다.');"/>
+          </fieldset>
+        </form>
+      </div>
+      <div class="find">
+          <form>
+            <fieldset>
+              <legend>비밀번호 찾기</legend>
+                <table>
+                  <tr>
+                    <td>아이디</td>
+                    <td><input type="text" size="35" name="userid" placeholder="아이디를 입력해주세요."></td>
+                  </tr>
+                </table>
+              <input type="submit" value="비밀번호 찾기" onclick="alert('저는...도움을 줄 수 없어요. 한 번 잘 생각해보세요 당신에 머릿속에 있을겁니다.');"/>
+          </fieldset>
+        </form>
+      </div>
+    </center>
+</body>
+</html>

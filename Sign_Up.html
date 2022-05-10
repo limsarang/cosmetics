@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign_Up</title>
+    <style>
+        * {
+            font-family: 'Merriweather', serif;
+        }
+        h, td, tr, input, textarea, select, FORM {
+         font-size:1em;
+         border-radius:5px;
+         
+        }
+        
+        table, FORM {
+         border:3px solid black;
+         border-spacing:15px;
+         background: linear-gradient( to bottom, White, gray );
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1><strong>COSMETICS SIGN UP</strong></h1>
+        <table>
+        <FORM>
+         <tr>
+       
+          <td text-align="center">아이디 </td>
+          <td>
+          <input type = "text" placeholder="아이디를 입력해주세요." />
+          <input type = "button" value = "중복확인"/>
+          </td>
+         </tr>
+       
+       
+       
+         <tr>
+          <td> 비밀번호 </td>
+          <td> <input type = "password" placeholder="비밀번호를 입력해주세요."/> </td>
+         </tr>
+       
+       
+         <tr>
+          <td> 비밀번호 확인 </td>
+          <td> <input type = "password" placeholder="비밀번호를 다시 입력해주세요."/>&nbsp; </td>
+         </tr>
+       
+         <tr>
+          <td> 성명 </td>
+          <td> <input type = "text" placeholder="성명을 입력해주세요."/> </td>
+         </tr>
+       
+       
+         <tr>
+          <td> 성별 </td>
+          <td>
+           <input type = "radio" name = "gender"/ checked> 남자
+           <input type = "radio" name = "gender"/> 여자
+          </td>
+         </tr>
+       
+       
+       
+       
+         <tr>
+          <td> 이메일 </td>
+          <td>
+           <input type = "text" placeholder="이메일을"/> @ <input type = "text" placeholder="입력해주세요."/> &nbsp;&nbsp;
+           <select>
+            <option> 직접입력 </option>
+            <option> naver.com </option>
+            <option> daum.net </option>
+            <option> nate.com </option>
+           </select>
+          </td>
+         </tr>
+       
+       
+       
+       
+         <tr>
+          <td> 주소 </td>
+          <td>
+           <input type = "text" placeholder="주소를 적어주세요."/>
+           <input type = "button" value = "주소찾기"/>
+          </td>
+         </tr>
+         <tr>
+          <td> 상세주소 </td>
+          <td>
+           <input type = "text" placeholder="더 자세한 주소를 알려주세요."/>
+          </td>
+         </tr>
+       
+       
+       
+         <tr>
+          <td> 휴대폰 </td>
+          <td>
+           <input type = "radio" name = "phone"/> SKT
+           <input type = "radio" name = "phone"/> KTF
+           <input type = "radio" name = "phone"/> LGU+
+          <br/>
+           <select>
+            <option> 010 </option>
+            <option> 011 </option>
+            <option> 016 </option>
+            <option> 018 </option>
+           </select>
+           <input type = "text" size = "6"/> - <input type = "text" size = "6"/>
+          </td>
+         </tr>
+       
+       
+       
+       
+         <tr>
+          <td> 관심  </td>
+          <td>
+           <input type = "checkbox"/> 립스틱
+           <input type = "checkbox"/> 파운데이션
+           <input type = "checkbox"/> 블러셔
+           <input type = "checkbox"/> 아이섀도우
+           <input type = "checkbox"/> 아이라인
+          </td>
+         </tr>
+       
+       
+       
+         <tr>
+          <td> 자기소개  </td>
+          <td>
+           <textarea cols = "60" rows = "10"></textarea>
+          </td>
+         </tr>
+        </FORM>
+       </table>
+       
+       <br/>
+       
+       
+       <input type = "submit" value = "가입하기" onclick="alert('가입 완료 *^^*!');"/>
+       <input type = "reset" value = "다시 입력" onclick="alert('리셋! 은 안돼...');"/>
+       
+       
+       </center>
+</body>
+</html>

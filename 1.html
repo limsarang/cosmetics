@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cosmetics</title>
+    <style>
+        body{
+            background-image: url(img/pattern.png);
+            background-color: none;
+        }
+        @media (min-width:481px){
+            .container {
+                margin: 0;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: 75% 25%;
+                grid-template-rows: 100px 100px 500px 500px 150px;
+                grid-template-areas: 
+                'header header'
+                'nav_2 nav_2'
+                'nav section'
+                'nav article'
+                'footer footer'
+                ;
+            }
+            .header {
+                grid-area: header;
+
+            }
+
+            .header h1 {
+                margin: 0px;
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                font-size: 40px;
+                line-height: 100px;
+                border-bottom: 4px solid black;
+                background: none;
+            }
+
+            .header a:link {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:visited {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:active {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:hover {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: black;
+            }
+
+            .nav_2 {
+                grid-area: nav_2;
+                border-bottom: 4px solid black;
+                background: none;
+            }
+
+            .nav { 
+                margin-left: 150px;
+                width: 1100px;
+                grid-area: nav;
+                background: none;
+            }
+
+            .LOGIN {
+                padding: 150px;
+                padding-left: 0px;
+                grid-area: section;
+                background: none;
+            }
+
+            .article {
+                grid-area: article;
+                padding-left: 0px;
+                background: none;
+            }
+
+            .footer {
+                text-align: center;
+                grid-area: footer;
+                background: black;
+                color: white;
+            }
+        }
+
+        @media (max-width: 480px){
+
+            .container {
+                text-align: center;
+                box-sizing: border-box;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr 1fr);
+                grid-template-rows: repeat(5, 100px 500px 300px 300px 130px);
+                grid-template-areas: 
+                'header header'
+                'nav nav'
+                'article nav_2'
+                'section section'
+                'footer footer'
+                ;
+            }
+
+            .header {
+                grid-area: header;
+
+            }
+
+            .header h1 {
+                font-family: 'Merriweather', serif;
+                text-align: center;
+                font-size: 40px;
+                line-height: 100px;
+                border-bottom: 4px solid black;
+                background: none;
+            }
+
+            .header a:link {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:visited {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:active {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: gray;
+            }
+            .header a:hover {
+                text-decoration:none;
+                font-family: 'Merriweather', serif;
+                color: black;
+            }
+
+            .nav_2 {
+                border-bottom: 4px solid black;
+                grid-area: nav_2;
+                font-size: 20px;
+                background: none;
+            }
+
+            .nav {
+                overflow-x:hidden;
+                grid-area: nav;
+                border-bottom: 4px solid black;
+                background: none;
+            }
+
+            
+            .nav iframe{
+                overflow-x:hidden;
+                width:100%;
+            }
+
+            .LOGIN {
+                padding-top: 50px;
+                grid-area: section;
+                background: none;
+            }
+            
+            .article {
+                border-bottom: 4px solid black;
+                border-right: 4px solid black;
+                grid-area: article;
+                background: none;
+            }
+
+            .name{
+                text-align: center;
+                padding: 20px;
+                font-size: small;
+
+            }
+
+            .footer {
+                grid-area: footer;
+                background: black;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header"><h1><a href="none.html" target="f3">cosmetics</a></h1></div>
+
+        <div class="item nav_2"><iframe src="none_2.html" height="500" width="1400" name="f4" frameborder=0 framespacing=0
+            marginheight=0 marginwidth=0 scrolling=no vspace=0>nav</iframe></div>
+
+        <div class="item nav"><iframe src="none.html" width="1100px" height="1000px" name="f3" allowtransparency=true
+             frameborder=0 framespacing=0 marginheight=0 marginwidth=0 scrolling=yes vspace=0>nav</iframe></div>
+
+        <div class="item LOGIN"><iframe src="LOGIN.html" height="500" frameborder=0 framespacing=0 
+            marginheight=0 marginwidth=0 scrolling=no vspace=0>javascript</iframe></div>
+
+        <div class="item article"><iframe src="nav.html" height="500" frameborder=0 framespacing=0 
+            marginheight=0 marginwidth=0 scrolling=no vspace=0>Nodejs</iframe></div>
+
+        <div class="item footer"><div class="name">
+            ㈜cosmetics는 cosmetics를 제외한 개별 판매자가 입점하여 등록한 상품에 대해서는<br> 통신판매중개자로서 통신판매의 당사자가 아닙니다.
+            <br>따라서 cosmetics를 제외한 개별 판매자가 입점하여 등록한 상품에 대한 상품정보 및 광고,<br> 상품주문, 배송, 환불에 관한 책임은 각 입점 판매자가 부담하고<br> ㈜cosmetics는 책임을 지지 않습니다.
+            @LIMSARANG_20200926</div></div>
+    </div>
+</body>
+</html>
